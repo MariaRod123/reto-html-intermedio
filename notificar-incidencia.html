@@ -14,7 +14,7 @@
         
         <label for="usuario">Usuario:</label>
         <br>
-        <input type="text"  name="usuario" id="usuario"  required>
+        <input type="text"  name="usuario" id="usuario" pattern="[A-Za-z0-9]+" required>
         <br>
         <br>
         <label for="departamento">Departamento:</label>
@@ -28,12 +28,12 @@
         <br>
         <label for="descripcion" >Descripción</label>
         <br>
-        <textarea name="descripcion" id="descripción" placeholder="Describa la incidencia..." required></textarea>
+        <textarea name="descripcion" id="descripción" maxlength="50" placeholder="Describa la incidencia..." required></textarea>
         <br>
         <br>
-        <label for="" id="contrasenia">Contraseña</label>
+        <label for="contrasenia" id="contrasenia">Contraseña</label>
         <br>
-        <input type="password"  name="contrasenia" id="contrasenia" required>
+        <input type="password"  name="contrasenia" id="contrasenia" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required>
         <br>
         <br>
     </fieldset>
